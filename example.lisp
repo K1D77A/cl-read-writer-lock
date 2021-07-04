@@ -1,11 +1,3 @@
-# cl-read-writer-lock
-
-Read writer lock implementation from:
-https://en.wikipedia.org/wiki/Reader-writer_lock#Using_a_condition_variable_and_a_mutex
-
-This is write preferring.
-
-```lisp
 (in-package #:rw-lock)
 
 (defvar *lock* (make-instance 'reader-writer-lock))
@@ -31,4 +23,5 @@ This is write preferring.
 
 ;;2000000 perfect
 
-```
+
+
